@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document mo</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="position-relative">
+
+                <!-- vav bar -->
+    <nav id="navbar">
+
+        <div id="head-nave"  class="vh-100 position-fixed top-0 start-0 bg-white d-flex flex-column justify-content-between align-items-center ps-2">
+            <div class="w-50 mt-4">
+                <img  class="w-100" src="image/logo.png" alt="logo">
+            </div>
+            <div class="d-flex flex-column">
+                <span id="open-Nav" style="cursor:pointer;" class="fs-3 fw-bolder"><i class="fa-solid fa-align-justify"></i></span>
+                <span id="clos-Nav" style="cursor:pointer;" class="fs-3 fw-bolder"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <span class="my-2">
+                    <a class="text-black"><i class="fa-solid fa-globe"></i></a>
+                </span>
+
+                <span class="my-2">
+                    <a class="text-black"><i class="fa-solid fa-share-nodes"></i></a>
+                </span>
+            </div>
+        </div>
+
+        <div id="side-nav"  class=" vh-100 position-fixed top-0 start-0 d-flex justify-content-between flex-column py-3 px-2 sidenav">
+            <div id="navUp" class=" overflow-hidden">
+                <div  class="d-flex flex-column mt-3">
+                    <a onclick="addUrlmoviedb('movie/now_playing')" class="m-3 text-decoration-none fs-6 fw-light text-white" href='#Now playing'>Now playing</a>
+                    <a onclick="addUrlmoviedb('movie/popular')"  class="m-3 text-decoration-none fs-6 fw-light text-white" href="#Popular">Popular</a>
+                    <a onclick="addUrlmoviedb('movie/top_rated')"  class="m-3 text-decoration-none fs-6 fw-light text-white" href="#Top-Rated">Top Rated</a>
+                    <a onclick="addUrlmoviedb('trending/all/day')"  class="m-3 text-decoration-none fs-6 fw-light text-white" href="#Trending">Trending</a>
+                    <a onclick="addUrlmoviedb('movie/upcoming')"  class="m-3 text-decoration-none fs-6 fw-light text-white" href="#Upcoming">Upcoming</a>
+                    <a class="m-3 text-decoration-none fs-6 fw-light text-white" href="#from-control">contact US</a>
+                </div>
+            </div>
+            
+            <div id="notUpDiv">
+                <div class="d-flex ms-3 my-4">
+                    <div>
+                        <a class="text-white mx-sm-2"><i class="fa-brands fa-facebook-f"></i></a> 
+                    </div>
+                    <div>
+                        <a class="text-white mx-2" ><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a class="text-white mx-2"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center text-white  ">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+                <!-- search -->
+    <section id="formSearch" class="pt-5">
+        <div class="container w-75 mt-5 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <input oninput="addUrlmoviedb(this.value)" class="form-control text-center" type="text" placeholder="get movies by word...">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <input class="form-control text-center" type="text" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        
+    </section>
+    
+           
+        
+    
+            <!-- new movies body -->
+    <section id="new-Movies">
+        <div id="bodyContainMovie" class="container w-75" >
+            <div class="row py-5 gy-4" id="rowData">
+               
+                <!-- <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-4 shadow">
+                    <div class="movies shadow rounded position-relative overflow-hidden">
+                        <div id="post">
+                            <img src="image/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="w-100 rounded-3" alt=""> 
+                            <div class="bg-layer d-flex align-items-center">
+                                <div class="text-center px-1 ">
+                                    <h2 class="my-2">Doctor Strange in the Multiverse of Madness</h2>
+                                    <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <p>rate: 7.6</p>
+                                    <P>2022-05-04</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div> -->
+            </div>
+        </div>
+    </section>
+<!-- form  -->
+    <section id="from-control">
+        <div class="container w-75 my-4">
+            <h2 class="mb-3 text-white">ContacUs...</h2>
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                        <div>
+                            <input id="EnterValidName" oninput="testValidatName(this.value)" class="form-control text-center bg-trans" type="text" placeholder="Enter Your Name">
+                            <div class="p-3 rounded-2 alert-danger" id="alertName" role="alert">Your Name is not valid</div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div>
+                            <input id="entreValidEmail" oninput="testValidatEmail(this.value)" class="form-control text-center" type="email" placeholder="Enter Email">
+                            <div class="p-3 rounded-2 alert-danger" id="alertEmail" role="alert">entre valid email</div>
+                        </div> 
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <input id="entreValidPhone" oninput="testValidPhone(this.value)" class="form-control text-center" type="number" placeholder="Enter Phone">
+                            <div class="p-3 rounded-2 alert-danger" id="alertPhone" role="alert">entre valid phone</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <input id="entreValidAge" oninput="testValidAge(this.value)" class="form-control text-center" type="number" placeholder="Enter Age">
+                            <div class="p-3 rounded-2 alert-danger" id="alertAge" role="alert">entre valid Age</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <input id="entreValidPassword" oninput="testValidPassword(this.value)" class="form-control text-center" type="password" placeholder="Enter Password">
+                            <div class="p-3 rounded-2 alert-danger" id="alertPassword" role="alert">entre valid password *Minimum eight characters, at least one letter and one number:*</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div>
+                            <input id="entreValidRePassword" oninput="testValidRepassword(this.value)" class="form-control text-center" type="password" placeholder="Enter RePassword">
+                            <div class="p-3 rounded-2 alert-danger" id="alertRepassword" role="alert">entre valid Repassword</div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-outline-danger">submet</a>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    
+
+   
+   
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

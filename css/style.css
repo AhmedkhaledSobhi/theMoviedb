@@ -1,0 +1,124 @@
+:root
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background: #000;
+    
+}
+
+
+/* nav bar */
+#navUp
+{
+    padding-top: 320px;
+    height: 350px;
+}
+#head-nave
+{
+    z-index: 99999999999999;
+    margin-left: 0px;
+}
+#side-nav
+{
+    z-index: 999999999999;
+    width: 240px;
+    height: auto;
+    margin-left: -260px;
+    background-color: #000;
+}
+#sidenav a
+{
+    transition: all 1s;
+}
+#side-nav a:hover
+{
+    color:#ff655c !important;
+}
+a i
+{
+    transition: all 1s;
+}
+a:hover i
+{
+    color:#ff655c;
+}
+
+#clos-Nav
+{
+    opacity: 0;
+}
+
+
+
+/* search web */
+#formSearch input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0px;
+    color: white;
+}
+
+
+
+
+.bg-layer
+{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color:  rgba(255,255,255,.7);
+    position: absolute;
+    transition: all 1s;
+}
+.movies:hover .bg-layer
+{
+    top: 0%;
+}
+
+#from-control input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0px;
+    color: white;
+}
+
+
+#alertName
+{
+    display: none;
+}
+#alertEmail
+{
+    display: none;
+}
+#alertPhone
+{
+    display: none;
+}
+#alertAge
+{
+    display: none;
+}
+#alertPassword
+{
+    display: none;
+}
+#alertRepassword
+{
+    display: none;
+}
+
+
+@media (max-width: 576px)
+{
+    #bodyContainMovie
+    {
+        width: 100% !important;
+    }
+}
