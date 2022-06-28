@@ -54,17 +54,17 @@ addUrlmoviedb()
 
 
 
-// async function getgnewMovidb(category='')
-// {
-//     // let response=await fetch(`https://api.themoviedb.org/3/movie/now_playing?query="+${category}+"api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
-//     // let response =await fetch(`https://api.themoviedb.org/3/trending/all/day?query="+${category}h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`);
-//     let response=await fetch(`https://api.themoviedb.org/3/search/movie?query="+${category}h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
-//     let resulte= await response.json();
-//     let apireselt=resulte.results;
-//     newsmovie= apireselt;
-//     displaymove()
-//     // console.log(newsmovie)
-// }
+async function getgnewMovidb(category='')
+{
+    // let response=await fetch(`https://api.themoviedb.org/3/movie/now_playing?query="+${category}+"api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
+    // let response =await fetch(`https://api.themoviedb.org/3/trending/all/day?query="+${category}h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`);
+    let response=await fetch(`https://api.themoviedb.org/3/search/movie?query="+${category}h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
+    let resulte= await response.json();
+    let apireselt=resulte.results;
+    newsmovie= apireselt;
+    displaymove()
+    // console.log(newsmovie)
+}
 
 
 
