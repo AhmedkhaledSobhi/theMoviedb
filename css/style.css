@@ -119,6 +119,12 @@ a:hover i
 {
     #bodyContainMovie
     {
-        width: 100% !important;
+        width: 80% !important;
+        margin-right: 0;
+    }
+    .formSearch
+    {
+        width: 80% !important;
+        margin-right: 0;
     }
 }

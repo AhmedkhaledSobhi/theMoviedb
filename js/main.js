@@ -35,11 +35,11 @@ $("#navUp a[href^='#']").click(function(){
 
 let newsmovie=[];
 
-async function addUrlmoviedb( nuwmovie='search/movie' , category='' )
+async function addUrlmoviedb( nuwmovie='search/movie'  )
 {
     //     async function getgnewMovidb(categor='')
     // {
-        let response=await fetch(`https://api.themoviedb.org/3/${nuwmovie}?query="+${category}h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
+        let response=await fetch(`https://api.themoviedb.org/3/${nuwmovie}?query="+h+"&api_key=eba8b9a7199efdcb0ca1f96879b83c44`)
         let resulte= await response.json();
         let apiReselt=resulte.results;
         newsmovie= apiReselt;
@@ -52,6 +52,7 @@ async function addUrlmoviedb( nuwmovie='search/movie' , category='' )
 
 addUrlmoviedb()
 
+//////////////   section Api to featch Search //////////
 
 
 async function getgnewMovidb(category='')
@@ -203,7 +204,8 @@ function testValidPassword()
     });
 };
 
-// cheack Repassword
+/////////////// cheack Repassword    /////////////
+
 function testValidRepassword()
 {
     let regex=/^[a-zA-z]{0,6} {0,1}[0-9]{0,12}$/;
