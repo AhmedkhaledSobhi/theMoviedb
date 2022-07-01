@@ -5,9 +5,19 @@
 body
 {
     background: #000;
+    overflow-y: hidden;
     
 }
-
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.9);
+    z-index: 99999999999;
+}
 
 /* nav bar */
 #navUp
@@ -17,7 +27,7 @@ body
 }
 #head-nave
 {
-    z-index: 99999999999999;
+    z-index: 999999999;
     margin-left: 0px;
 }
 #side-nav
@@ -119,12 +129,21 @@ a:hover i
 {
     #bodyContainMovie
     {
-        width: 80% !important;
+        width: 88% !important;
         margin-right: 0;
     }
     .formSearch
     {
-        width: 80% !important;
+        width: 88% !important;
         margin-right: 0;
+    }
+    .from-control
+    {
+        width: 88% !important;
+        margin-right: 0;
+    }
+    #head-nave
+    {
+        width: 45px !important;
     }
 }

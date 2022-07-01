@@ -166,7 +166,7 @@ function testValidPhone()
 // cheack Age
 function testValidAge()
 {
-    let regex=/^([5-9]{0,1}[0-9]|100)$/
+    let regex=/^([2-9]{0,1}[0-9]{0,1}|100)$/
     $("#entreValidAge").keyup(function()
     {
         // var attrIdEVent= $(this).next().attr('id');
@@ -226,6 +226,14 @@ function testValidRepassword()
     });
 };
 
+$(document).ready(function(){
+    $('#loading i').fadeOut(1000 ,function(){
+        $('#loading').fadeOut(1000 , function(){
+            $('#loading').remove();
+            $("body").css('overflow-y','auto');
+        });
+    });
+})
 
 
 

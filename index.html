@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="position-relative">
-
+<body class="p">
+    <section id="loading" class="d-flex justify-content-center align-items-center">
+        <i class="fas fa-spinner fa-spin fa-7x text-danger"></i>
+    </section>
                 <!-- vav bar -->
     <nav id="navbar">
 
-        <div id="head-nave"  class="vh-100 position-fixed top-0 start-0 bg-white d-flex flex-column justify-content-between align-items-center ps-2">
+        <div id="head-nave"  class="vh-100 position-fixed top-0 start-0 bg-white d-flex flex-column justify-content-between align-items-center ps-1 rounded-1">
             <div class="w-50 mt-4">
-                <img  class="w-100" src="image/logo.png" alt="logo">
+                <img  class="w-100 mx-auto" src="image/logo.png" alt="logo">
             </div>
             <div class="d-flex flex-column">
                 <span id="open-Nav" style="cursor:pointer;" class="fs-3 fw-bolder"><i class="fa-solid fa-align-justify"></i></span>
-                <span id="clos-Nav" style="cursor:pointer;" class="fs-3 fw-bolder"><i class="fa-solid fa-xmark"></i></span>
+                <span id="clos-Nav" style="cursor:pointer;" class="fs-3 fw-bolder ps-1"><i class="fa-solid fa-xmark"></i></span>
             </div>
             <div class="d-flex flex-column mb-5">
                 <span class="my-2">
@@ -193,7 +195,7 @@
     </section>
 <!-- form  -->
     <section id="from-control">
-        <div class="container w-75 my-4">
+        <div class="container w-75 my-4 from-control">
             <h2 class="mb-3 text-white">ContacUs...</h2>
                 <div class="row gy-3">
                     <div class="col-md-6">
